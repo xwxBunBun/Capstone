@@ -1,7 +1,7 @@
 /* Reset default styles */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 5;
+    padding: 5;
     box-sizing: border-box;
 }
 
@@ -104,7 +104,7 @@ html, body {
 
 /* Footer Styling */
 footer {
-    background-color: #767676;
+    background-color: #000000a9;
     color: white;
     text-align: center;
     padding: 20px;
