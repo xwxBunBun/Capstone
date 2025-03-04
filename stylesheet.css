@@ -1,17 +1,24 @@
-/* Reset some default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+/* Body background and text */
+body {
+    background-image: url('https://cdn.discordapp.com/attachments/1231577401310580816/1346339799858020402/hexcore.jpg?ex=67c7d426&is=67c682a6&hm=70d775ee13a0bbe45e68dcad0d43118be7c8a1bc0c0fda03fc3c6104dcca3250&');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.362);
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     color: #ffffff;
     line-height: 1.6;
 }
 
+/* Header */
 header {
     background-color: #1f1f1f;
     color: #fff;
@@ -19,21 +26,33 @@ header {
     padding: 20px;
 }
 
-h1 {
-    font-size: 2.5rem;  /* Reduced size for header */
+h1, h2 {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Main content area */
 .characters {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;  /* Reduced the gap between cards */
+    gap: 15px;
     margin: 40px;
 }
 
 .character-card {
     background-color: #fff;
-    width: 180px;  /* Reduced width of the card */
+    width: 180px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -47,73 +66,51 @@ h1 {
 
 .character-image {
     width: 100%;
-    height: 200px;  /* Reduced image height */
-    object-fit: cover;  /* Ensures the image fills the container without distorting */
+    height: 200px;
+    object-fit: cover;
     border-bottom: 2px solid #ddd;
-}
-
-h2 {
-    font-size: 1.4rem;  /* Reduced size for character name */
-    margin: 10px 0;
 }
 
 .role {
     font-weight: bold;
-    font-size: 1rem;  /* Reduced font size for role */
+    font-size: 1rem;
     color: #0077cc;
 }
 
 .description {
-    font-size: 0.9rem;  /* Reduced description text size */
+    font-size: 0.9rem;
     padding: 10px;
     color: #555;
 }
 
-footer {
-    background-color: #1f1f1f;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-h1,h2 {
-    font-family: 'Philosopher', sans-serif;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p {
-    font-size: 20px;
-    text-align: center;      /* Centers the text inside the paragraph */
-  }
-h2 {
-    font-size: 2rem;
-    color: #ffffff;
-    text-align: center;  /* This centers the h2 element */
-    margin-bottom: 20px;
-    width: 100%; /* Ensures it takes full width of the section */
-}
 /* Ensure the body takes up at least the full height of the screen */
 html, body {
     height: 100%;
-    margin: 0;
 }
 
 /* Main content area */
 .main-content {
-    min-height: 100%; /* Ensure it takes the full height */
-    padding-bottom: 50px; /* This is to prevent the footer from covering content */
+    min-height: 100%; /* Ensure content takes full height */
+    padding-bottom: 50px; /* Leave space for footer */
+    box-sizing: border-box;
 }
 
 /* Footer Styling */
 footer {
-    position: relative;  /* Sticks to the bottom */
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
+    background-color: #767676;
     color: white;
     text-align: center;
     padding: 20px;
+    position: relative; /* Footer is part of the normal flow */
+    width: 100%;
+    bottom: 0;
 }
 
 footer a {
@@ -134,14 +131,20 @@ footer ul li {
     display: inline;
     margin-right: 10px;
 }
-
-body {
-    background-image: url('https://cdn.discordapp.com/attachments/1231577401310580816/1346339799858020402/hexcore.jpg?ex=67c7d426&is=67c682a6&hm=70d775ee13a0bbe45e68dcad0d43118be7c8a1bc0c0fda03fc3c6104dcca3250&');
-    background-size: cover; /* Ensures the image covers the whole background */
-    background-position: center; /* Centers the image */
-    background-repeat: repeat; /* Prevents the image from repeating */
-    margin: 0; /* Removes any default margin */
+/* Ensure content area doesn't get covered by footer */
+.main-content {
+    min-height: 100%;
+    padding-bottom: 50px;
 }
-body {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.764);
-  }
+h3{
+    color: black;
+}
+/* Styling for links */
+a {
+    color: #fb5ffc; /* Violet pink color */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for a hover effect */
+}
