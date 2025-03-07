@@ -132,8 +132,88 @@ footer ul li {
     padding-bottom: 50px;
 }
 h3{
-    color: black;
+    color: black; 
+    text-align: center;
 }
+/* General container for the ships */
+.ship-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Styling for the ship name (header) */
+h2.ships {
+    font-size: 2rem;
+    color: white;  /* Set the color of the text to white */
+    margin-bottom: 10px;
+}
+
+/* Styling for the ship name (header) */
+h4.ship-names {
+    font-size: 2rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Card styling for each ship */
+.ship-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px; /* Reduced padding to make the card smaller */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 400px; /* Limit the card width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hover effect for cards */
+.ship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for ship photos */
+.ship-photo {
+    width: 80%;  /* Adjust this value to make the image smaller */
+    max-width: 300px;  /* This limits the maximum width of the images */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Paragraph text inside the card */
+.ship-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .ship-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .ship-card {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .ships, .ship-names {
+        font-size: 1.5rem;
+    }
+
+    .ship-photo {
+        max-width: 100%; /* Ensure the image fits the container */
+    }
+}
+
+
 /* Styling for links */
 a {
     color: #fb5ffc; /* Violet pink color */
